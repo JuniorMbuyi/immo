@@ -23,9 +23,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '@y=u\nfVcE!e!FIf;J|tz9h>@'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
 
-ALLOWED_HOSTS = ['localhost','.herokuapp.com']
+if os.environ.get('ENV') == 'PRODUCTION':
+    DEBUG =False
+else :
+    DEBUG = True
+
+ALLOWED_HOSTS = ['immosouza.herokuapp.com']
 
 
 # Application definition
@@ -36,7 +40,6 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'whitenoise.runserver_nostatic',
     'django.contrib.staticfiles',
     'home'
 ]
@@ -49,7 +52,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware'
+ 
 ]
 
 ROOT_URLCONF = 'souzy.urls'
@@ -120,18 +123,13 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-EMAIL_HOST ='localhost'
-EMAIL_PORT = '1025'
-EMAIL_HOST_USER =''
-EMAIL_HOST_PASSWORD = ''
-EMAIL_USE_TLS = False 
 
 
-WHITENOISE_USE_FINDERS = True
 
-STATICFILES_STORAGE ='whitenoise.storage.CompresseManifestStaticFilesStorage'
