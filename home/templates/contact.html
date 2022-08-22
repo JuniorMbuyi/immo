@@ -1,4 +1,3 @@
-
 {% load static %}
 
 <!DOCTYPE html>
@@ -17,8 +16,8 @@
 		<meta name="author" content="okler.net">
 
 		<!-- Favicon -->
-		<link rel="shortcut icon" href="https://www.okler.net/previews/porto/9.5.0/img/favicon.ico" type="image/x-icon" />
-		<link rel="apple-touch-icon" href="https://www.okler.net/previews/porto/9.5.0/img/apple-touch-icon.png">
+		<link rel="shortcut icon" href="{% static 'img/favicon.ico' %}" type="image/x-icon" />
+		<link rel="apple-touch-icon" href="{% static 'img/apple-touch-icon.png' %}">
 
 		<!-- Mobile Metas -->
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
@@ -27,31 +26,31 @@
 		<link id="googleFonts" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&amp;display=swap" rel="stylesheet" type="text/css">
 
 		<!-- Vendor CSS -->
-		<link rel="stylesheet" href="https://www.okler.net/previews/porto/9.5.0/vendor/bootstrap/css/bootstrap.min.css">
-		<link rel="stylesheet" href="https://www.okler.net/previews/porto/9.5.0/vendor/fontawesome-free/css/all.min.css">
-		<link rel="stylesheet" href="https://www.okler.net/previews/porto/9.5.0/vendor/animate/animate.compat.css">
-		<link rel="stylesheet" href="https://www.okler.net/previews/porto/9.5.0/vendor/simple-line-icons/css/simple-line-icons.min.css">
-		<link rel="stylesheet" href="https://www.okler.net/previews/porto/9.5.0/vendor/owl.carousel/assets/owl.carousel.min.css">
-		<link rel="stylesheet" href="https://www.okler.net/previews/porto/9.5.0/vendor/owl.carousel/assets/owl.theme.default.min.css">
-		<link rel="stylesheet" href="https://www.okler.net/previews/porto/9.5.0/vendor/magnific-popup/magnific-popup.min.css">
+		<link rel="stylesheet" href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}">
+		<link rel="stylesheet" href="{% static 'vendor/fontawesome-free/css/all.min.css' %}">
+		<link rel="stylesheet" href="{% static 'vendor/animate/animate.compat.css' %}">
+		<link rel="stylesheet" href="{% static 'vendor/simple-line-icons/css/simple-line-icons.min.css' %}">
+		<link rel="stylesheet" href="{% static 'vendor/owl.carousel/assets/owl.carousel.min.css' %}">
+		<link rel="stylesheet" href="{% static 'vendor/owl.carousel/assets/owl.theme.default.min.css' %}">
+		<link rel="stylesheet" href="{% static 'vendor/magnific-popup/magnific-popup.min.css' %}">
 
 		<!-- Theme CSS -->
-		<link rel="stylesheet" href="https://www.okler.net/previews/porto/9.5.0/css/theme.css">
-		<link rel="stylesheet" href="https://www.okler.net/previews/porto/9.5.0/css/theme-elements.css">
-		<link rel="stylesheet" href="https://www.okler.net/previews/porto/9.5.0/css/theme-blog.css">
-		<link rel="stylesheet" href="https://www.okler.net/previews/porto/9.5.0/css/theme-shop.css">
+		<link rel="stylesheet" href="{% static 'css/theme.css' %}">
+		<link rel="stylesheet" href="{% static 'css/theme-elements.css' %}">
+		<link rel="stylesheet" href="{% static 'css/theme-blog.css' %}">
+		<link rel="stylesheet" href="{% static 'css/theme-shop.css' %}">
 
 		<!-- Demo CSS -->
-		<link rel="stylesheet" href="https://www.okler.net/previews/porto/9.5.0/css/demos/demo-finance.css">
+		<link rel="stylesheet" href="{% static 'css/demos/demo-finance.css' %}">
 
 		<!-- Skin CSS -->
-		<link id="skinCSS" rel="stylesheet" href="https://www.okler.net/previews/porto/9.5.0/css/skins/skin-finance.css">
+		<link id="skinCSS" rel="stylesheet" href="{% static 'css/skins/skin-finance.css' %}">
 
 		<!-- Theme Custom CSS -->
-		<link rel="stylesheet" href="https://www.okler.net/previews/porto/9.5.0/css/custom.css">
+		<link rel="stylesheet" href="{% static 'css/custom.css' %}">
 
 		<!-- Head Libs -->
-		<script src="https://www.okler.net/previews/porto/9.5.0/vendor/modernizr/modernizr.min.js"></script>
+		<script src="{% static 'vendor/modernizr/modernizr.min.js' %}"></script>
 
 
 		<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -66,6 +65,7 @@
 
 	</head>
 	<body>
+
 		<div class="body">
 			<header id="header" class="header-effect-shrink" data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyChangeLogo': true, 'stickyStartAt': 30, 'stickyHeaderContainerHeight': 85}">
 				<div class="header-body border-0">
@@ -189,11 +189,11 @@
 										<a href="tel:00243844634938" class="text-4-5 font-weight-bold text-color-light opacity-hover-8 text-decoration-none ps-3-5">(243) 844 634 938</a>
 									</div>
 									<div class="d-flex align-items-center my-5-5 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="1100">
-										<img width="38" height="38" src="https://www.okler.net/previews/porto/9.5.0/img/demos/finance/icons/email.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-light'}" />
+										<img width="38" height="38" src="{% static 'img/demos/finance/icons/email.svg' %}" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-light'}" />
 										<a href="mailto:juniormbuyi4000@gmail.com" class="text-4-5 font-weight-bold text-color-light opacity-hover-8 text-decoration-none ps-3-5"><span class="__cf_email__">souzy@gmail.com</span></a>
 									</div>
 									<div class="d-flex align-items-center pe-lg-5 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="1300">
-										<img width="38" height="38" src="https://www.okler.net/previews/porto/9.5.0/img/demos/finance/icons/map-pin.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-light'}" />
+										<img width="38" height="38" src="{% static 'img/demos/finance/icons/map-pin.svg' %}" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-light'}" />
 										<p class="text-color-light font-weight-bold text-4-5 mb-0 ps-3-5 pe-lg-5 me-lg-5">8 Rue MALULA, Kinshasa, RDC</p>
 									</div>
 								</div>
@@ -276,7 +276,7 @@
 								<div class="input-group">
 									<input class="form-control bg-color-light-scale-1 border-0 px-4 text-3" placeholder="Email Adress..." name="newsletterEmail" id="newsletterEmail" type="email">
 									<button class="btn btn-primary px-3" type="submit">
-										<img width="27" height="27" src="https://www.okler.net/previews/porto/9.5.0/img/demos/business-consulting-3/icons/arrow-right.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-light'}" />
+										<img width="27" height="27" src="{% static 'img/demos/business-consulting-3/icons/arrow-right.svg' %}" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-light'}" />
 									</button>
 								</div>
 							</form>
@@ -317,38 +317,33 @@
 				</div>
 			</footer>
 		</div>
-	<!-- Vendor -->
-	<script data-cfasync="false" src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://www.okler.net/previews/porto/9.5.0/vendor/jquery/jquery.min.js"></script>
-	<script src="https://www.okler.net/previews/porto/9.5.0/vendor/jquery.appear/jquery.appear.min.js"></script>
-	<script src="https://www.okler.net/previews/porto/9.5.0/vendor/jquery.easing/jquery.easing.min.js"></script>
-	<script src="https://www.okler.net/previews/porto/9.5.0/vendor/jquery.cookie/jquery.cookie.min.js"></script>
-	<script src="https://www.okler.net/previews/porto/9.5.0/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-	<script src="https://www.okler.net/previews/porto/9.5.0/vendor/jquery.validation/jquery.validate.min.js"></script>
-	<script src="https://www.okler.net/previews/porto/9.5.0/vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js"></script>
-	<script src="https://www.okler.net/previews/porto/9.5.0/vendor/jquery.gmap/jquery.gmap.min.js"></script>
-	<script src="https://www.okler.net/previews/porto/9.5.0/vendor/lazysizes/lazysizes.min.js"></script>
-	<script src="https://www.okler.net/previews/porto/9.5.0/vendor/isotope/jquery.isotope.min.js"></script>
-	<script src="https://www.okler.net/previews/porto/9.5.0/vendor/owl.carousel/owl.carousel.min.js"></script>
-	<script src="https://www.okler.net/previews/porto/9.5.0/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-	<script src="https://www.okler.net/previews/porto/9.5.0/vendor/vide/jquery.vide.min.js"></script>
-	<script src="https://www.okler.net/previews/porto/9.5.0/vendor/vivus/vivus.min.js"></script>
-	
-	<!-- Theme Base, Components and Settings -->
-	<script src="https://www.okler.net/previews/porto/9.5.0/js/theme.js"></script>
-	
-	<!-- Current Page Vendor and Views -->
-	<script src="https://www.okler.net/previews/porto/9.5.0/js/views/view.contact.js"></script>
-	
-	<!-- Theme Initialization Files -->
-	<script src="https://www.okler.net/previews/porto/9.5.0/js/theme.init.js"></script>
-	
-	<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"70f101df5a6d06db","version":"2021.12.0","r":1,"token":"03fa3b9eb60b49789931c4694c153f9b","si":100}' crossorigin="anonymous"></script>
-	</body>
-	
-	</html>
-	
-	
-	
-	
-	
-	
+<!-- Vendor -->
+<script data-cfasync="false" src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+<script src="{% static 'vendor/jquery.appear/jquery.appear.min.js' %}"></script>
+<script src="{% static 'vendor/jquery.easing/jquery.easing.min.js' %}"></script>
+<script src="{% static 'vendor/jquery.cookie/jquery.cookie.min.js' %}"></script>
+<script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'vendor/jquery.validation/jquery.validate.min.js' %}"></script>
+<script src="{% static 'vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js' %}"></script>
+<script src="{% static 'vendor/jquery.gmap/jquery.gmap.min.js' %}"></script>
+<script src="{% static 'vendor/lazysizes/lazysizes.min.js' %}"></script>
+<script src="{% static 'vendor/isotope/jquery.isotope.min.js' %}"></script>
+<script src="{% static 'vendor/owl.carousel/owl.carousel.min.js' %}"></script>
+<script src="{% static 'vendor/magnific-popup/jquery.magnific-popup.min.js' %}"></script>
+<script src="{% static 'vendor/vide/jquery.vide.min.js' %}"></script>
+<script src="{% static 'vendor/vivus/vivus.min.js' %}"></script>
+
+<!-- Theme Base, Components and Settings -->
+<script src="{% static 'js/theme.js' %}"></script>
+
+<!-- Current Page Vendor and Views -->
+<script src="{% static 'js/views/view.contact.js' %}"></script>
+
+<!-- Theme Initialization Files -->
+<script src="{% static 'js/theme.init.js' %}"></script>
+
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"70f101df5a6d06db","version":"2021.12.0","r":1,"token":"03fa3b9eb60b49789931c4694c153f9b","si":100}' crossorigin="anonymous"></script>
+</body>
+
+<!-- Mirrored from www.okler.net/previews/porto/9.6.0/demo-finance.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 21 May 2022 23:36:34 GMT -->
+</html>
